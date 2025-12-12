@@ -1,0 +1,22 @@
+{
+  "name": "C++ OOP Lab 6",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools-extension-pack",
+        "ms-vscode.cmake-tools",
+        "llvm-vs-code-extensions.vscode-clangd"
+      ],
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "C_Cpp.default.compilerPath": "/usr/local/bin/g++",
+        "cmake.configureOnOpen": true,
+        "cmake.buildDirectory": "/workspace/build"
+      }
+    }
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+  "workspaceFolder": "/workspace"
+}
